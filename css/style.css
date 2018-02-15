@@ -1,0 +1,147 @@
+@font-face {
+ font-family: "Roboto";
+ src: url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Roboto Bold";
+ src: url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Roboto Medium";
+ src: url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+}
+
+.page {
+  min-width: 1183px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #849d8f;
+  background-image: url("../img/bg1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 27px;
+}
+
+.font {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.font--bold {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font--medium {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header__image {
+  width: 154px;
+  height: 64px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation__items {
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation__item {
+  padding-right: 25px;
+}
+
+.main-navigation__item--padding {
+  padding-right: 10px;
+}
+
+.main-navigation__link {
+  display: inline-block;
+  line-height: 17px;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px #adbdb4 solid;
+}
+
+.main-navigation__link--nostyle {
+  border-bottom: none;
+}
+
+.main-navigation__text-link {
+  vertical-align: top;
+  padding-left: 3px;
+}
+
+.button {
+  max-width: 117px;
+  padding: 7px 8px 4px;
+  background-color: #9db1a5;
+  border-radius: 20px;
+}
+
+.button--padding {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f8f7f4;
+  color: #000000;
+}
+
+.button:hover path,
+.button:focus path {
+  fill: #000000;
+}
+
+.button--red:hover path:first-child,
+.button--red:focus path:first-child {
+  fill: #e84d37;
+}
+
+.button--red:hover circle,
+.button--red:focus circle {
+  fill: #000000;
+}
