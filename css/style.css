@@ -16,6 +16,18 @@
         url("../fonts/robotomedium.woff") format("woff");
 }
 
+.button {
+  padding: 8px 14px;
+  background-color: #9db1a5;
+  border-radius: 30px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f8f7f4;
+  color: #000000;
+}
+
 .page {
   min-width: 1183px;
   margin: 0;
@@ -49,6 +61,7 @@ img {
 .container {
   width: 1200px;
   padding: 0 27px;
+  margin: 0 auto;
 }
 
 .font {
@@ -71,6 +84,8 @@ img {
 
 .main-header {
   display: flex;
+  padding-top: 9px;
+  width: 1146px;
 }
 
 .main-header__image {
@@ -81,54 +96,90 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-navigation__items {
-  list-style: none;
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-navigation__item {
-  padding-right: 25px;
-}
-
-.main-navigation__item--padding {
-  padding-right: 10px;
+  padding-left: 9px;
 }
 
 .main-navigation__link {
-  display: inline-block;
-  line-height: 17px;
+  position: relative;
+  padding: 8px 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation__link::before {
+  content: " ";
+	position: absolute;
+	left: 12px;
+	right: 13px;
+	bottom: 8px;
+	height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation__link:hover {
+  background-color: #f7f6f3;
+  border-radius: 30px;
+  color: #000000;
+}
+
+.main-navigation__link:active {
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation__link--active {
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 30px;
+}
+
+.main-navigation__link--active::before {
+  content: "";
+  background-color: #d07058;
+}
+
+.main-navigation__link--active:hover {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.main-navigation__link--active:active {
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/*TODO Стилизовать подменю! */
+.submenu {
+  display: none;
+}
+
+.user-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-menu__button {
+
+}
+
+.user-menu__link {
   text-decoration: none;
   color: #ffffff;
-  border-bottom: 1px #adbdb4 solid;
 }
 
-.main-navigation__link--nostyle {
-  border-bottom: none;
-}
-
-.main-navigation__text-link {
-  vertical-align: top;
-  padding-left: 3px;
-}
-
-.button {
-  max-width: 117px;
-  padding: 7px 8px 4px;
-  background-color: #9db1a5;
-  border-radius: 20px;
-}
-
-.button--padding {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #f8f7f4;
-  color: #000000;
+.user-menu__link-text {
+  vertical-align: middle;
 }
 
 .button:hover path,
@@ -136,12 +187,12 @@ img {
   fill: #000000;
 }
 
-.button--red:hover path:first-child,
-.button--red:focus path:first-child {
+.main-navigation__button--color-red:hover path:first-child,
+.main-navigation__button--color-red:focus path:first-child {
   fill: #e84d37;
 }
 
-.button--red:hover circle,
-.button--red:focus circle {
+.main-navigation__button--color-red:hover circle,
+.main-navigation__button--color-red:focus circle {
   fill: #000000;
 }
