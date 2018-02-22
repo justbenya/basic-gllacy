@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page container font">
+  <body class="page-picture container font">
     <header class="main-header">
       <img class="main-header__image" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       <nav class="main-navigation  font--bold">
         <ul class="main-navigation__items">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#">Каталог</a>
-            <ul class="submenu">
+            <ul class="submenu font font--medium">
               <li class="submenu__item">
                 <a class="submenu__link submenu__link--active" href="#">Новинки</a>
               </li>
@@ -38,9 +38,10 @@
             <a class="main-navigation__link  main-navigation__link--active" >О Компании</a>
           </li>
         </ul>
+
         <ul class="user-menu  font--medium">
           <li class="user-menu__item">
-            <a class="user-menu__link  button  user-menu__button" href="#">
+            <a class="user-menu__link button user-menu__button" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewbox="0 0 17 17">
                 <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
@@ -50,16 +51,16 @@
             </a>
           </li>
           <li class="user-menu__item">
-            <a class="user-menu__link  button  user-menu__button" href="#">
+            <a class="user-menu__link button user-menu__button user-menu__button--width-medium" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewbox="0 0 21 19">
                 <g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
               </svg>
-              <span class="main-navigation__text-link">Вход</span>
+              <span class="user-menu__link-text">Вход</span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a class="user-menu__link  button" href="#">
+            <a class="user-menu__link button user-menu__button user-menu__button--width-high" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20">
                 <path fill="#a1b4a9" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
                 <circle fill="#fff" cx="6.984" cy="18" r="2"/><circle fill="#fff" cx="15.984" cy="18" r="2"/>
@@ -68,7 +69,9 @@
               <span class="user-menu__link-text">Пусто</span>
             </a>
           </li>
-          <li class="user-menu__item"><p class="main-navigation__text">С 10 до 20, ежедневно</p><p>8 812 450-25-25</p></li>
+          <li class="user-menu__item">
+            <p class="user-menu__text">С 10 до 20, ежедневно</p><p class="user-menu__text user-menu__text--big">8 812 450-25-25</p>
+          </li>
         </ul>
       </nav>
     </header>

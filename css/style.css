@@ -28,11 +28,7 @@
   color: #000000;
 }
 
-.page {
-  min-width: 1183px;
-  margin: 0;
-  padding: 0;
-
+.page-picture {
   background-color: #849d8f;
   background-image: url("../img/bg1.png");
   background-position: top center;
@@ -59,7 +55,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1146px;
   padding: 0 27px;
   margin: 0 auto;
 }
@@ -96,17 +92,15 @@ img {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 20px;
 }
 
 .main-navigation__items {
+  width: 702px;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.main-navigation__item {
   padding-left: 9px;
 }
 
@@ -157,42 +151,107 @@ img {
   box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-/*TODO Стилизовать подменю! */
 .submenu {
-  display: none;
-}
-
-.user-menu {
-  display: flex;
+  position: absolute;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 25px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.submenu--visible {
+  display: block;
+}
+
+.submenu__item {
+  padding: 10px 19px;
+}
+
+.submenu__link--active {
+  position: relative;
+}
+
+.submenu__link--active::before {
+  content: " ";
+	position: absolute;
+	left: -10px;
+	right: -55px;
+	bottom: -10px;
+	height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.submenu__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu {
+  width: 267px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -8px;
+  padding-left: 10px;
 }
 
 .user-menu__button {
-
+  display: inline-block;
+  padding: 8px 8px 6px;
+  border-radius: 20px;
 }
+
+.user-menu__button:hover path,
+.user-menu__button:focus path {
+  fill: #000000;
+}
+
+.user-menu__button--width-medium {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.user-menu__button--width-high {
+  padding-left: 16px;
+  padding-right: 36px;
+}
+
+.user-menu__button--width-high:hover path:first-child,
+.user-menu__button--width-high:focus path:first-child {
+  fill: #e84d37;
+}
+
+.user-menu__button--width-high:hover circle,
+.user-menu__button--width-high:focus circle {
+  fill: #000000;
+}
+
 
 .user-menu__link {
   text-decoration: none;
   color: #ffffff;
+  margin-left: 10px;
 }
 
 .user-menu__link-text {
-  vertical-align: middle;
+  vertical-align: 3px; 
 }
 
-.button:hover path,
-.button:focus path {
-  fill: #000000;
+.user-menu__text {
+  color: #ffffff;
+  margin: 16px 0 4px;
+  text-align: right;
 }
 
-.main-navigation__button--color-red:hover path:first-child,
-.main-navigation__button--color-red:focus path:first-child {
-  fill: #e84d37;
+.user-menu__text--big {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0;
 }
 
-.main-navigation__button--color-red:hover circle,
-.main-navigation__button--color-red:focus circle {
-  fill: #000000;
-}
