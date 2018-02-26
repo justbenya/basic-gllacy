@@ -20,6 +20,8 @@
   padding: 8px 14px;
   background-color: #9db1a5;
   border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .button:hover,
@@ -152,6 +154,7 @@ img {
 }
 
 .submenu {
+  display: none;
   position: absolute;
   list-style: none;
   padding: 0;
@@ -168,6 +171,18 @@ img {
 
 .submenu__item {
   padding: 10px 19px;
+}
+
+.submenu__item:hover {
+  background-color: #fbded7;
+}
+
+.submenu__item:active {
+  background-color: #f6b5a5;
+}
+
+.submenu__link--select {
+  background-color: #d07058;
 }
 
 .submenu__link--active {
@@ -188,6 +203,7 @@ img {
   color: #000000;
   text-decoration: none;
 }
+
 
 .user-menu {
   width: 267px;
@@ -255,3 +271,61 @@ img {
   margin: 0;
 }
 
+.slider__title {
+  display: none;
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  padding: 270px 239px 0;
+  margin: 0 0 36px;
+}
+
+.slider__title--active {
+  display: block;
+}
+
+.button-main {
+  padding: 7px 35px 15px;
+  margin-left: 358px;
+
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image:-webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.button-main:hover {
+  background-image: linear-gradient(to top,#ec6f5e,#f58569);
+  box-shadow: 0 1px 3px 0 rgba(172,16,0,1);
+}
+
+.button-main:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image:-webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.6);
+}
+
+.radio-button {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio-button:hover {
+  background: rgba(255,255,255,0.4);
+}
