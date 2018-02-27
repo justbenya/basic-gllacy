@@ -314,6 +314,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
+  border: none;
 }
 
 .button-main:hover {
@@ -362,7 +363,6 @@ input[type="radio"].visually-hidden {
 
 .banner {
   width: 560px;
-  max-height: 229px;
   border-radius: 20px;
 }
 
@@ -523,9 +523,16 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
+  padding-bottom: 35px;
 }
 
-.banner__title--color-gray {
+.banner--post-bg {
+  background-color: #f8f7f4;
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+}
+
+.banner__title--color-grey {
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
@@ -542,4 +549,53 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #323232;
   text-decoration: underline;
+}
+
+.banner__wrapper--post-bg {
+  background-color: #f8f7f4;
+  padding: 30px 20px 35px;
+  margin: 5px 6px;
+  border-radius: 20px;
+}
+
+.banner_text--color-grey {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+  margin: 0 0 35px;
+}
+
+.form__mail {
+  box-sizing: border-box;
+  width: 370px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  font: inherit;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #d3d3d2;
+}
+
+.form__button {
+  padding: 10px 16px;
+}
+
+.feedback {
+  position: absolute;
+  top: 61px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 20px;
+  background-color: #fefefe;
+}
+
+.feedback__wrapper {
+  padding: 27px; 
+}
+
+.map {
+  position: relative;
 }

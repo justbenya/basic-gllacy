@@ -182,39 +182,42 @@
       <div class="two-column">
         <article class="banner banner--strawberry-bg">
           <div class="banner__wrapper banner__wrapper--padding">
-            <h2 class="font font--medium banner__title banner__title--color-gray">Новое в нашем блоге</h2>
+            <h2 class="font font--medium banner__title banner__title--color-grey">Новое в нашем блоге</h2>
             <a class="font font--bold banner__text banner__text--link" href="">10 способов сервировки <br> фруктовых щербетов к
               <br> столу</a>
           </div>          
         </article>
         
-        <section class="banner banner--chocolate-bg font font--bold">
-          <div class="banner__wrapper">
+        <section class="banner banner--post-bg">
+          <div class="banner__wrapper banner__wrapper--post-bg">
             <h2 class="visually-hidden">Рассылка почты</h2>
-            <p class="banner__text">
+            <p class="font banner__text banner_text--color-grey">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить
               и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="form" action="index.html" method="post">
-              <input type="mail" name="mail" value="" placeholder="Электронная почта">
-              <button class="button" type="button" name="button"></button>
+              <input class="form__mail" type="mail" name="mail" value="" placeholder="Электронная почта">
+              <button class="button-main button-main--other form__button" type="button" name="button">Отправить</button>
             </form>
           </div>     
         </section>
       </div>
       
 
-      <section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
         <img src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <section class="feedback">
-          <p>Адрес главного офиса и офлайн магазина:</p>
-          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-          <p>Для заказов по телефону:</p>
-          <p>
-            <b>8 812 450-25-25</b> <br>
-            (с 10 до 20 ежедневно)
-          </p>
-          <a class="button" href="#">Форма обратной связи</a>
+        <section class="font feedback">
+          <div class="feedback__wrapper">
+            <p>Адрес главного офиса и офлайн магазина:</p>
+            <b class="">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            <p>Для заказов по телефону:</p>
+            <p>
+              <b>8 812 450-25-25</b>
+              <br> (с 10 до 20 ежедневно)
+            </p>
+            <a class="button-main button-main--other" href="#">Форма обратной связи</a>
+          </div>    
         </section>
       </section>
     </main>
