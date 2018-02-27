@@ -80,48 +80,73 @@
         <h2 class="slider__title slider__title--active">Крем-брюле и пломбир с малиновым джемом</h2>
         <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
         <h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
-        <button class="radio-button" type="radio" name="button"></button>
-        <button class="radio-button" type="radio" name="button"></button>
-        <button class="radio-button" type="radio" name="button"></button>
-        <a class="button-main" href="#">Давайте оба!</a>
+        <div class="slider__wrapper">
+          <span class="radiobox  radibox--selected"></span>
+          <span class="radiobox"></span>
+          <span class="radiobox"></span>
+          <a class="button-main button-main--center" href="#">Давайте оба!</a>
+        </div>
       </div>
     
-      <section class="banner">
-        <h2>Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого,
-          добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
-      </section>
-
-      <section class="banner">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-          вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!</a>
-      </section>
-
+      <div class="two-column">
+        <section class="banner banner--raspberries-bg font font--bold">
+          <div class="banner__wrapper">
+            <h2 class="banner__title">Малинка даром!</h2>
+            <p class="banner__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button-main button-main--other" href="#">Хочу варенье!</a>
+          </div>
+        </section>
+        <section class="banner banner--chocolate-bg font font--bold">
+          <div class="banner__wrapper">
+            <h2 class="banner__title">Шоколадки даром!</h2>
+            <p class="banner__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button-main button-main--other" href="#">Хочу шоколадки!</a>
+          </div>
+        </section>
+      </div>
+      
       <section class="icecream">
-        <h2 class="visual-hidden">Список мороженого</h2>
+        <h2 class="visually-hidden">Список мороженого</h2>
         <ul class="icecream__items">
           <li class="icecream__item">
+            <span class="icecream__sticker"></span>
             <img class="icecream__img" src="img/icecream1.png"
                 width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой" >
-            <p class="icecream__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">310 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <p class="font font--medium icecream__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </li>
           <li class="icecream__item">
+            <span class="icecream__sticker"></span>
             <img class="icecream__img" src="img/icecream2.png"
                 width="267" height="267" alt="Мороженое с кусочками шоколада" >
-            <p class="icecream__text">Сливочно-кофейное с кусочками шоколада</p>
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">380 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <p class="font font--medium icecream__text">Сливочно-кофейное с кусочками шоколада</p>
           </li>
           <li class="icecream__item">
+            <span class="icecream__sticker"></span>
             <img class="icecream__img" src="img/icecream3.png"
                 width="267" height="267" alt="Мороженое с присыпкой из белого шоколада" >
-            <p class="icecream__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">355 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <p class="font font--medium icecream__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
           </li>
           <li class="icecream__item">
+            <span class="icecream__sticker"></span>
             <img class="icecream__img" src="img/icecream4.png"
                 width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой" >
-            <p class="icecream__text">Сливочное крем-брюле с карамельной подливкой</p>
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">415 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <p class="font font--medium icecream__text">Сливочное крем-брюле с карамельной подливкой</p>
           </li>
         </ul>
       </section>

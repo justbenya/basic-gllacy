@@ -42,8 +42,11 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   padding: 0;
@@ -278,8 +281,8 @@ img {
   font-size: 60px;
   line-height: 62px;
   color: #ffffff;
-  padding: 270px 239px 0;
-  margin: 0 0 36px;
+  padding: 270px 239px 34px;
+  margin: 0;
 }
 
 .slider__title--active {
@@ -287,9 +290,6 @@ img {
 }
 
 .button-main {
-  padding: 7px 35px 15px;
-  margin-left: 358px;
-
   color: #ffffff;
   border-radius: 30px;
   text-decoration: none;
@@ -297,11 +297,23 @@ img {
   background-image:-webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-
   font-family: "Roboto Bold", Arial, sans-serif;
+}
+
+.button-main--center {
+  padding: 5px 39px 10px;
+  margin-left: 350px;
   font-size: 32px;
   line-height: 44px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+
+.button-main--other {
+  padding: 12px 25px;
+  float: right;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .button-main:hover {
@@ -316,16 +328,131 @@ img {
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.6);
 }
 
-.radio-button {
+.slider {
+  margin-bottom: 50px;
+}
+
+.radiobox {
   display: inline-block;
+  margin-top: 20px;
+  margin-right: 8px;
+  
   width: 17px;
   height: 17px;
-  margin-right: 8px;
+
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.radio-button:hover {
+.radiobox:hover {
   background: rgba(255,255,255,0.4);
+}
+
+.radibox--selected, 
+.radibox--selected:hover {
+  background-color: #ffffff;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.banner {
+  width: 560px;
+  max-height: 229px;
+  border-radius: 20px;
+}
+
+.banner--raspberries-bg {
+  background-color: #000000;
+  background-image: url("../img/raspberries-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner--chocolate-bg {
+  background-color: #000000;
+  background-image: url("../img/chocolate-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__wrapper {
+  padding: 0;
+  margin: 14px 17px 40px;
+}
+
+.banner__title {
+  margin: 0;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.banner__text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 43px;
+}
+
+.icecream {
+  margin-bottom: 40px;
+}
+
+.icecream__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icecream__item {
+  position: relative;
+  width: 267px;
+  text-align: center;
+}
+
+.icecream__text {
+  display: inline;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.icecream__img {
+  width: 267px;
+  height: 267px;
+  margin-bottom: 10px;
+}
+
+.icecream__sticker {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.icecream__price {
+  position: absolute;
+  bottom: 65px;
+  left: 0px;
+  color: #ffffff;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.icecream__font {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.icecream__font--small {
+  font-size: 30px;
 }
