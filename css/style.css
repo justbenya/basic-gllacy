@@ -518,3 +518,28 @@ input[type="radio"].visually-hidden {
 .column__text--thermometer::before {
   background-image: url("../img/thermometer.svg");
 }
+
+.banner--strawberry-bg {
+  background-color: #000000;
+  background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.banner__title--color-gray {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 200;
+  color: #323232;
+}
+
+.banner__wrapper--padding {
+  padding-top: 10px;
+}
+
+.banner__text--link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
