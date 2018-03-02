@@ -202,18 +202,17 @@
           </div>     
         </section>
       </div>
-      
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img src="img/map.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <section class="font feedback">
           <div class="feedback__wrapper">
-            <p>Адрес главного офиса и офлайн магазина:</p>
-            <b class="">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-            <p>Для заказов по телефону:</p>
-            <p>
-              <b>8 812 450-25-25</b>
+            <p class="font feedback__text">Адрес главного офиса <br> и офлайн магазина:</p>
+            <b class="font font--bold feedback__text feedback__text--bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            <p class="feedback__text">Для заказов по телефону:</p>
+            <p class="font feedback__text">
+              <b class="font font--bold feedback__text feedback__text--bold">8 812 450-25-25</b>
               <br> (с 10 до 20 ежедневно)
             </p>
             <a class="button-main button-main--other" href="#">Форма обратной связи</a>
@@ -221,25 +220,49 @@
         </section>
       </section>
     </main>
-    <footer>
+    
+    <footer class="main-footer">
       <ul class="social-networks">
-        <li><a class="social-networks__item" href="https://twitter.com/">Twitter</a></li>
-        <li><a class="social-networks__item" href="https://instagram.com/">Instagram</a></li>
-        <li><a class="social-networks__item" href="https://facebook.com/">Facebook</a></li>
-        <li><a class="social-networks__item" href="https://vk.com/">Vkontakte</a></li>
+        <li>
+          <a class="social-networks__link social-networks__link--twitter" href="https://twitter.com/">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-networks__link social-networks__link--insta" href="https://instagram.com/">
+          <span class="visually-hidden">Instagram</span></a>
+        </li>
+        <li>
+          <a class="social-networks__link social-networks__link--fb" href="https://facebook.com/">
+          <span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li>
+          <a class="social-networks__link social-networks__link--vk" href="https://vk.com/">
+          <span class="visually-hidden">Vkontakte</span></a>
+        </li>
       </ul>
 
-      <nav>
-        <ul>
-          <li>Для поставщиков</li>
-          <li>О производстве</li>
-          <li>Наши документы</li>
-          <li>Экологические стандарты</li>
+      <nav class="footer-menu">
+        <ul class="footer-menu__items">
+          <li class="footer-menu__item">
+            <a class="font font--bold footer-menu__link footer-menu__link--favorite" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">О производстве</a>
+          </li>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </nav>
-
-      <img src="img/logo-htmlacademy.svg" width="111" height="38" alt="HTML Academy">
-      <p class="copyright">Сделано в HTML Academy © 2017</p>
+    
+    <p class="font copyright">
+      <img src="img/logo-htmlacademy.svg" width="111" height="38" alt="HTML Academy"><br>
+      Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018
+    </p>
     </footer>
   </body>
 </html>
