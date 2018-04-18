@@ -1,0 +1,18 @@
+.slider {
+  margin-bottom: 50px;
+}
+
+.slider__title {
+  display: none;
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+  padding: 270px 239px 34px;
+  margin: 0;
+}
+
+.slider__title--active {
+  display: block;
+}

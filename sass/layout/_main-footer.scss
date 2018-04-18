@@ -1,0 +1,61 @@
+//TODO Возможно нужно разелить блоки
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-menu__items {
+  width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu__item {
+  margin-left: 17px;
+}
+
+.footer-menu__item:last-child {
+  margin-left: 30px;
+}
+
+.footer-menu__link {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.footer-menu__link--favorite {
+  position: relative;
+}
+
+.footer-menu__link--favorite::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 13px;
+  top: 3px;
+  left: -20px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.copyright__link {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  text-decoration: none;
+}

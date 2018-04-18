@@ -1,0 +1,21 @@
+.container {
+  width: 1146px;
+  padding: 0 27px;
+  margin: 0 auto;
+}
+
+//TODO Добавить сюда секции и вложить slider, two columns и т.д. в них ПОМЕНЯТЬ РАЗМЕТКУ
+
+.page-picture {
+  background-color: #849d8f;
+  background-image: url("../img/bg1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+

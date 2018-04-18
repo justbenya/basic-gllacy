@@ -1,0 +1,27 @@
+.feedback {
+  width: 300px;
+  position: absolute;
+  top: 61px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 20px;
+  background-color: #fefefe;
+  color: #323232;
+}
+
+.feedback__wrapper {
+  padding: 27px; 
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feedback__text--bold {
+  font-size: 18px;
+  line-height: 24px;
+}

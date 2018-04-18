@@ -1,0 +1,10 @@
+.main-header {
+  display: flex;
+  padding-top: 9px;
+  width: 1146px;
+
+  &__image {
+    width: 154px;
+    height: 64px;
+  }
+}

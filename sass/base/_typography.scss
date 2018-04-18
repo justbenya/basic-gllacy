@@ -1,0 +1,35 @@
+@font-face {
+ font-family: "Roboto";
+ src: url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Roboto Bold";
+ src: url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Roboto Medium";
+ src: url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+}
+
+.font {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.font--bold {
+  font-family: "Roboto Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.font--medium {
+  font-family: "Roboto Medium", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
