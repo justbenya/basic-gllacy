@@ -1,16 +1,18 @@
+@import "abstracts/variables";
+
 @import "base/typography";
 @import "base/base";
 @import "base/utilities";
 
-@import "abstracts/variables";
-
 @import "pages/home";
 
-@import "layout/main-header";
+@import "layout/header";
 @import "layout/main-footer";
-@import "layout/main-navigation";
 
+@import "components/main-navigation";
+@import "components/work-time";
 @import "components/about";
+@import "components/logo";
 @import "components/banner";
 @import "components/button-main";
 @import "components/button";
@@ -24,3 +26,5 @@
 @import "components/social-networks";
 @import "components/submenu";
 @import "components/user-menu";
+@import "components/footer-menu";
+@import "components/copyright";
