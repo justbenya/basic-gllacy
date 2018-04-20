@@ -1,27 +1,25 @@
 .feedback {
-  width: 300px;
+  width: 30.3rem;
   position: absolute;
-  top: 61px;
-  right: 20px;
-  font-size: 14px;
-  line-height: 22px;
+  top: 6rem;
+  right: 2rem;
+
+  font-family: $font-roboto;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
   border-radius: 20px;
   background-color: #fefefe;
-  color: #323232;
-}
+  color: $color-dark-grey;
+  padding: 2.7rem; 
 
-.feedback__wrapper {
-  padding: 27px; 
-}
+  &__text {
+    margin-bottom: 2rem;
+  }
 
-.feedback__text {
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.feedback__text--bold {
-  font-size: 18px;
-  line-height: 24px;
+  &__text--bold {
+    font-family: $font-roboto-bold;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
 }

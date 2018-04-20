@@ -1,81 +1,75 @@
 .banner {
-  width: 560px;
-  border-radius: 20px;
-}
-
-.banner--raspberries-bg {
-  background-color: #000000;
-  background-image: url("../img/raspberries-bg.jpg");
+  flex-basis: 56rem;
+  border-radius: 1.5rem;
+  background-color: #000;
   background-repeat: no-repeat;
-}
+  color: #fff;
 
-.banner--chocolate-bg {
-  background-color: #000000;
-  background-image: url("../img/chocolate-bg.jpg");
-  background-repeat: no-repeat;
-}
+  &--raspberries-bg {
+    background-image: url("../img/raspberries-bg.jpg");
+  }
 
-.banner__wrapper {
-  padding: 0;
-  margin: 14px 17px 40px;
-}
+  &--chocolate-bg {
+    background-image: url("../img/chocolate-bg.jpg");
+  }
 
-.banner__title {
-  margin: 0;
-  font-size: 35px;
-  line-height: 41px;
-  color: #ffffff;
-}
+  &--strawberry-bg {
+    background-image: url("../img/strawberry-bg.jpg");
+  }
 
-.banner__text {
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
-  margin-bottom: 43px;
-}
+  &__wrapper {
+    margin: 1.4rem 1.7rem 4rem;
+  }
 
-.banner--strawberry-bg {
-  background-color: #000000;
-  background-image: url("../img/strawberry-bg.jpg");
-  background-repeat: no-repeat;
-  padding-bottom: 35px;
-}
+  &__title {
+    font-size: 3.5rem;
+    line-height: 4.1rem;
+    margin-bottom: 1.5rem;
+  }
 
-.banner--post-bg {
-  background-color: #f8f7f4;
-  background-image: url("../img/bg-post.svg");
-  background-repeat: no-repeat;
-}
+  &__text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 4.5rem;
+  }
 
-.banner__title--color-grey {
-  margin-bottom: 5px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 200;
-  color: #323232;
-}
+  //TODO Возможно стоит разделить на отдельный блок
+  &--post-bg {
+    background-color: $color-light-white-2;
+    background-image: url("../img/bg-post.svg");
+    background-repeat: no-repeat;
+  }
 
-.banner__wrapper--padding {
-  padding-top: 10px;
-}
+  &__title--color-grey {
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+    color: $color-dark-grey;
+  }
 
-.banner__text--link {
-  font-size: 24px;
-  line-height: 30px;
-  color: #323232;
-  text-decoration: underline;
-}
+  &__wrapper--padding {
+    padding-top: 1rem;
+  }
 
-.banner__wrapper--post-bg {
-  background-color: #f8f7f4;
-  padding: 30px 20px 35px;
-  margin: 5px 6px;
-  border-radius: 20px;
-}
+  &__text--link {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: $color-dark-grey;
+    text-decoration: underline;
+  }
 
-.banner_text--color-grey {
-  font-size: 16px;
-  line-height: 22px;
-  color: #323232;
-  margin: 0 0 35px;
+  &__wrapper--post-bg {
+    background-color: $color-light-white-2;
+    padding: 3rem 2rem 3.5rem;
+    margin: .5rem .6rem;
+    border-radius: 2rem;
+  }
+
+  &_text--color-grey {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $color-dark-grey;
+    margin-bottom: 3.5rem;
+  }
 }

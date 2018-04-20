@@ -1,21 +1,21 @@
 .radiobox {
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 8px;
+  margin-top: 2rem;
+  margin-right: .8rem;
   
-  width: 17px;
-  height: 17px;
+  width: 1.7rem;
+  height: 1.7rem;
 
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
-}
 
-.radiobox:hover {
-  background: rgba(255,255,255,0.4);
-}
+  &:hover {
+    background: rgba(255,255,255,0.4);
+  }
 
-.radibox--selected, 
-.radibox--selected:hover {
-  background-color: #ffffff;
+  &--selected, 
+  &--selected:hover {
+    background-color: #ffffff;
+  }
 }

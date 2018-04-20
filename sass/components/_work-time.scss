@@ -1,0 +1,15 @@
+.work-time {
+  flex: 1 0 0;
+  margin-left: 50%;
+
+  &__text {
+    color: #ffffff;
+    text-align: right;
+  }
+
+  &__text--big {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+  }
+}

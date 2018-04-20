@@ -1,65 +1,51 @@
 .user-menu {
-  width: 267px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: -8px;
-  padding-left: 10px;
-}
 
-.user-menu__button {
-  display: inline-block;
-  padding: 8px 8px 6px;
-  border-radius: 20px;
-}
+  &__item {
+    margin-left: 1rem;
+  }
 
-.user-menu__button:hover path,
-.user-menu__button:focus path {
-  fill: #000000;
-}
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__link-text {
+    margin-left: .8rem;
+  }
 
-.user-menu__button--width-medium {
-  padding-left: 16px;
-  padding-right: 16px;
-}
+  &__button {
+    padding-top: .8rem;
+    padding-bottom: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+  }
 
-.user-menu__button--width-high {
-  padding-left: 16px;
-  padding-right: 36px;
-}
+  &__button:hover path,
+  &__button:focus path {
+    fill: #000;
+  }
 
-.user-menu__button--width-high:hover path:first-child,
-.user-menu__button--width-high:focus path:first-child {
-  fill: #e84d37;
-}
+  &__button--width-medium {
+    padding-left: 1.2rem;
+    padding-right: 1.6rem;
+  }
+  
+  &__button--width-high {
+    padding-left: 1.2rem;
+    padding-right: 3.6rem;
+  }
 
-.user-menu__button--width-high:hover circle,
-.user-menu__button--width-high:focus circle {
-  fill: #000000;
-}
+  &__button--width-high:hover path:first-child,
+  &__button--width-high:focus path:first-child {
+    fill: $color-light-red;
+  }
 
-
-.user-menu__link {
-  text-decoration: none;
-  color: #ffffff;
-  margin-left: 10px;
-}
-
-.user-menu__link-text {
-  vertical-align: 3px; 
-}
-
-.user-menu__text {
-  color: #ffffff;
-  margin: 16px 0 4px;
-  text-align: right;
-}
-
-.user-menu__text--big {
-  font-size: 22px;
-  line-height: 24px;
-  margin: 0;
+  &__button--width-high:hover circle,
+  &__button--width-high:focus circle {
+    fill: #000;
+  }
 }

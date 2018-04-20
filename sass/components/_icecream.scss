@@ -1,59 +1,57 @@
 .icecream {
-  margin-bottom: 40px;
-}
-
-.icecream__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  color: #fff;
+
+  &__item {
+    position: relative;
+    flex-basis: 26.7rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: $font-roboto-medium;
+    
+    display: inline;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  &__img {
+    width: 26.7rem;
+    height: 26.7rem;
+    margin-bottom: 1rem;
+  }
+
+  &__sticker {
+    position: absolute;
+    width: 6.1rem;
+    height: 6.1rem;
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 6.5rem;
+    left: 0;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  }
+
+  &__font {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  &__font--small {
+    font-size: 3rem;
+  }
 }
 
-.icecream__item {
-  position: relative;
-  width: 267px;
-  text-align: center;
-}
 
-.icecream__text {
-  display: inline;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.icecream__img {
-  width: 267px;
-  height: 267px;
-  margin-bottom: 10px;
-}
-
-.icecream__sticker {
-  position: absolute;
-  width: 61px;
-  height: 61px;
-  background-image: url("../img/hit.svg");
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.icecream__price {
-  position: absolute;
-  bottom: 65px;
-  left: 0px;
-  color: #ffffff;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-}
-
-.icecream__font {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.icecream__font--small {
-  font-size: 30px;
-}
