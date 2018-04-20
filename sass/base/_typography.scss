@@ -17,19 +17,18 @@
 }
 
 .font {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-}
+  font-family: $font-roboto;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 
-.font--bold {
-  font-family: "Roboto Bold", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-}
+  &--bold {
+    font-family: $font-roboto-bold;
+    line-height: 1.8rem;
+  }
 
-.font--medium {
-  font-family: "Roboto Medium", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  &--medium {
+    font-family: $font-roboto-medium;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 }
