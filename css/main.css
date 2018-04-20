@@ -473,14 +473,14 @@ input[type="radio"].visually-hidden {
     box-sizing: content-box;
     width: 3rem;
     height: 3rem;
-    display: inline-block;
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.8;
     border: 3px solid #c2cec7;
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-    margin-right: 10px; }
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 1rem; }
   .social-networks__link:hover {
     opacity: 1; }
   .social-networks__link:active {
