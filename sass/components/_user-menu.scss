@@ -6,6 +6,14 @@
     margin-left: 1rem;
   }
 
+  &__item:hover &__search {
+    display: flex;
+  }
+
+  &__item:hover .form-login {
+    display: block;
+  }
+
   &__link {
     position: relative;
     text-decoration: none;
@@ -51,13 +59,13 @@
   }
 
   &__search {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
     width: 34rem;
     height: 7.5rem;    
-    margin-top: 1rem;
+    margin-top: .3rem;
     right: 28.5rem;
 
     background-color: $color-light-white-2;
@@ -72,5 +80,10 @@
     border: 1px solid #d3d3d2;
     font: inherit;
     font-size: 1.4rem;
+    transition: all .1s;
+
+    &:hover {
+      border: 1px solid #a7a7a7;
+    }
   }
 }

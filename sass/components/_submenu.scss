@@ -1,9 +1,9 @@
 .submenu {
-  // display: none;
+  display: none;
   position: absolute;
   list-style: none;
   left: 21.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   background-color: $color-light-white-2;
   border-radius: 5px;
   box-shadow: $shadow-dark-blur;
@@ -13,16 +13,9 @@
   line-height: 1.6rem;  
   color: #000;  
 
-  &--visible {
-    display: block;
-  }
-
-  &__item {
-    margin-bottom: .5rem;
-  }
-
   &__link:hover {
     background-color: $color-light-red-3;
+    border-radius: 0 0 5px 5px;
   }
 
   &__link:active {
@@ -31,7 +24,8 @@
 
   &__link:link,
   &__link:visited {
-    padding: .8rem 2rem;
+    padding: 1rem 2rem;
+    
     color: #000;
     text-decoration: none;
     display: block;
@@ -47,7 +41,7 @@
   &__title {
     position: relative;
     padding: .8rem 2rem .8rem;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
     margin-top: .2rem;
     font-family: $font-roboto-bold;
     line-height: 1.8rem;

@@ -1,8 +1,9 @@
 .form-login { 
+  display: none;
   position: absolute;
   width: 28rem;
   height: 21.9rem;
-  margin-top: .8rem;
+  margin-top: .3rem;
   right: 18.5rem;
     
   background-color: $color-light-white-2;
@@ -23,9 +24,14 @@
     margin-bottom: 2rem;
     border-radius: 5px;
     border: 1px solid #d3d3d2;
+    transition: all .1s;
     
     font: inherit;
     font-size: 1.4rem;
+
+    &:hover {
+      border: 1px solid #a7a7a7;
+    }
   }
 
   &__group {

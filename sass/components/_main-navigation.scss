@@ -1,11 +1,14 @@
 .main-navigation {
-
   margin-right: auto;
 
   &__items {
     padding-left: 1rem;
     display: flex;
     list-style: none;
+  }
+
+  &__item:hover .submenu {
+    display: block;
   }
 
   &__link {

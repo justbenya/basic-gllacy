@@ -1,4 +1,5 @@
 .form-buy {
+  display: none;
   position: absolute;
   margin-top: .7rem;
   right: 5.5rem;
@@ -106,7 +107,6 @@
 
   &__text {
     display: table-cell;
-    // width: 100%;
     padding: 5rem;
   }
 
