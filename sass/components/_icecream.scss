@@ -9,16 +9,51 @@
     position: relative;
     flex-basis: 26.7rem;
     text-align: center;
+   
+    &:hover::after {
+      content: "";
+      display: block;
+      position: absolute; 
+      
+      width: 110%;
+      height: 123%;
+      top: -1rem;
+      left: -1.3rem;
+
+      background-color: rgba(255,255,255,0.3);
+      border-radius: 5px;
+      box-shadow: $shadow-dark-blur;
+      z-index: 10;  
+    }
   }
 
-  &__text {
+  &__box {
+    position: relative;
+  }
+
+  &__item:hover &__box  {
+    z-index: 20;
+  }
+
+  &__item:hover &__button  {
+    display: block;
+  }
+
+  &__link:visited,
+  &__link:link {
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-family: $font-roboto-medium;
-    
+    text-decoration: none;
+    color: #fff;
     display: inline;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
   }
+
+  &__link:hover {
+    color: $color-link-red;
+    border-bottom: $line-link-red;
+   }
 
   &__img {
     width: 26.7rem;
@@ -51,6 +86,14 @@
 
   &__font--small {
     font-size: 3rem;
+  }
+
+  &__button {
+    display: none;
+    position: absolute;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    left: 4rem;
   }
 }
 
