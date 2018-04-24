@@ -66,8 +66,8 @@
           </a>
           <div class="form-login">
             <form class="form-login__form">
-              <input class="form-login__input" type="text" placeholder="Электронная почта">
-              <input class="form-login__input" type="password" placeholder="Пароль">
+              <input class="form-login__input" type="text" placeholder="Электронная почта" required>
+              <input class="form-login__input" type="password" placeholder="Пароль" required>
               <div class="form-login__group">
                 <div class="form-login__link-group">
                   <input class="button-main form-login__button" type="submit" value="Войти">
@@ -289,7 +289,7 @@
           <b class="feedback__text--bold">8 812 450-25-25</b>
           <br> (с 10 до 20 ежедневно)
         </p>
-        <a class="button-main button-main--other" href="#">Форма обратной связи</a>
+        <a class="button-main button-main--other" href="#modal-feedback">Форма обратной связи</a>
       </div>
     </section>
     
@@ -336,5 +336,28 @@
       Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018
     </p>
     </footer>
+
+    <div id="modal-feedback" class="modal-feedback">
+      <div class="modal-feedback__content">
+        <form class="modal-form" action="">
+          <h2>Мы обязательно вам ответим!</h2>
+          <div class="modal-form__group">
+            <input class="modal-form__input" id="name" type="text" placeholder="Как вас зовут?" required>
+            <label class="modal-form__label" for="name">Как вас зовут?</label>
+          </div>
+          <div class="modal-form__group">
+            <input class="modal-form__input" id="email" type="email" placeholder="Ваша почта для ответа?" required>
+            <label class="modal-form__label" for="email">Ваша почта для ответа?</label>
+          </div>
+          <div class="modal-form__group">
+            <input class="modal-form__input" id="description" type="text" placeholder="Напишите что-нибудь..." required>
+            <label class="modal-form__label" for="description">Напишите что-нибудь...</label>
+          </div>
+          <div class="modal-form__group">
+            <button class="button-main modal-form__button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
