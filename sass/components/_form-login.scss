@@ -1,0 +1,51 @@
+.form-login { 
+  position: absolute;
+  width: 28rem;
+  height: 21.9rem;
+  margin-top: .8rem;
+  right: 18.5rem;
+    
+  background-color: $color-light-white-2;
+  border-radius: 5px;
+  box-shadow: $shadow-dark-blur; 
+  
+  font-family: $font-roboto;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+
+  &__form {
+    margin: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+    
+    font: inherit;
+    font-size: 1.4rem;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    display: inline-block;
+    align-self: baseline;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: $color-dark-grey;
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+  }
+}

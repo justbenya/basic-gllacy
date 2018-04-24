@@ -41,8 +41,8 @@
       </nav>
       
       <ul class="user-menu font font--medium">
-        <li class="user-menu__item button user-menu__button">
-          <a class="user-menu__link" href="#">
+        <li class="user-menu__item">
+          <a class="user-menu__link button user-menu__button" href="#">
             <span class="visually-hidden">Поиск</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewbox="0 0 17 17">
               <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
@@ -50,6 +50,9 @@
                        2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
             </svg>
           </a>
+          <div class="user-menu__search">
+            <input class="user-menu__input" type="text" placeholder="Что ищем?">
+          </div>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link button user-menu__button user-menu__button--width-medium" href="#">
@@ -61,6 +64,21 @@
             </svg>
             <span class="user-menu__link-text">Вход</span>
           </a>
+          <div class="form-login">
+            <form class="form-login__form">
+              <input class="form-login__input" type="text" placeholder="Электронная почта">
+              <input class="form-login__input" type="password" placeholder="Пароль">
+              <div class="form-login__group">
+                <div class="form-login__link-group">
+                  <input class="button-main form-login__button" type="submit" value="Войти">
+                </div>        
+                <div class="form-login__link-group">
+                  <a class="form-login__link" href="">Забыли пароль?</a>
+                  <a class="form-login__link" href="">Новая регистрация</a>
+                </div>  
+              </div>
+            </form>
+          </div>
         </li>
         <li class="user-menu__item">
           <a class="user-menu__link button user-menu__button user-menu__button--width-high" href="#">
@@ -73,6 +91,44 @@
             </svg>
             <span class="user-menu__link-text">Пусто</span>
           </a>
+          <div class="form-buy">
+            <form class="form-buy__form" action="">
+              <table class="form-buy__table">
+                <caption class="form-buy__caption">Итого: 750 руб.</caption>
+                <tr>
+                  <td>
+                    <button class="form-buy__btn-del" type="button" title="Удалить">Удалить</button>
+                  </td>
+                  <td>
+                    <img class="form-buy__photo" src="img/icecream1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  </td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х
+                    <span class="form-buy__price">200 руб.</span>
+                  </td>
+                  <td>
+                    300 руб.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="form-buy__btn-del" type="button" title="Удалить">Удалить</button>
+                  </td>
+                  <td>
+                    <img class="form-buy__photo" src="img/icecream3.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  </td>
+                  <td>Сливочно-клубничное с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х
+                    <span class="form-buy__price">300 руб.</span>
+                  </td>
+                  <td>
+                    450 руб.
+                  </td>
+                </tr>
+              </table>
+              <input class="button-main form-buy__button" type="submit" value="Оформить заказ">       
+            </form>
+          </div>
         </li>
       </ul>
       <div class="work-time font font--medium">

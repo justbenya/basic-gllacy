@@ -1,0 +1,125 @@
+.form-buy {
+  position: absolute;
+  margin-top: .7rem;
+  right: 5.5rem;
+  width: 54rem;
+    
+  background-color: $color-light-white-2;
+  border-radius: 5px;
+  box-shadow: $shadow-dark-blur; 
+  
+  font-family: $font-roboto;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: $color-dark-grey;
+
+  &__form {
+    margin: 1rem;
+    text-align: right;
+  }
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+
+  tr:last-child {
+    border-bottom: 1px solid $color-light-grey;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 1rem 1.2rem 1.4rem 0;
+  }
+
+  td:last-child {
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  td:nth-child(3) {
+    max-width: 20rem;
+  }
+
+  td:nth-child(n+3) {
+    padding-top: 1.5rem;
+  }
+
+  td:nth-child(4) {
+    min-width: 10rem;
+    padding-left: 1.5rem;
+  }
+
+  td:nth-child(5) {
+    min-width: 5rem;
+  }
+
+  &__caption {
+    caption-side: bottom;
+    padding: 1.5rem 0;
+    text-align: right;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $color-dark-grey;
+    font-weight: 700;
+  }
+
+  &__btn-del {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    &::before, 
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 1.5rem;
+      height: .2rem;
+      background-color: $color-dark-grey;
+      transition: all .2s;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before, 
+    &:hover::after {
+       background-color: $color-light-red;
+    }
+  }
+
+  &__photo {
+    width: 3.3rem;
+    border-radius: 100px;
+  }
+
+  &__text {
+    display: table-cell;
+    // width: 100%;
+    padding: 5rem;
+  }
+
+  &__price {
+    color: $color-light-grey;
+  }
+
+  &__button {
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+}

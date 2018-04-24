@@ -7,6 +7,7 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -47,5 +48,29 @@
   &__button--width-high:hover circle,
   &__button--width-high:focus circle {
     fill: #000;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 34rem;
+    height: 7.5rem;    
+    margin-top: 1rem;
+    right: 28.5rem;
+
+    background-color: $color-light-white-2;
+    border-radius: 5px;
+    box-shadow: $shadow-dark-blur;
+  }
+
+  &__input {
+    width: 90%;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #d3d3d2;
+    font: inherit;
+    font-size: 1.4rem;
   }
 }
