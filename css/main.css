@@ -565,7 +565,10 @@ input[type="radio"].visually-hidden {
     left: 4rem; }
 
 .map {
-  width: 100vw; }
+  background-image: url("../img/map.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 43rem; }
 
 .radiobox {
   display: inline-block;
