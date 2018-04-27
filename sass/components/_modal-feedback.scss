@@ -10,15 +10,24 @@
   z-index: 300;
   transition: all .3s;
 
+  &__button-box {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: .5rem;
+    right: .5rem;
+  }
+
   &__content {
     position: absolute;
     top: 50%;
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%) scale(.5);
-    width: 70%;
+    width: 48rem;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: $color-light-white-2;
     transition: all .4s .2s;
   }
 
@@ -30,24 +39,5 @@
   &:target &__content {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-  }
-
-  &__close {
-    &:link,
-    &:visited {
-      line-height: 1px;
-      // color: $color-grey-dark;
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all .2s;
-    }
-
-    &:hover {
-      // color: $color-primary;
-    }
   }
 }

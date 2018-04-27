@@ -1,0 +1,45 @@
+.dialog-close-button {
+  //TODO Заменить этим классом кнопку закрытия в ховер окне мороженого
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: .8rem;
+
+  &::before, 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1.5rem;
+    height: .2rem;
+    background-color: $color-dark-grey;
+    transition: all .2s;
+  }   
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before, 
+  &:hover::after {
+    background-color: $color-light-red;
+  }
+
+  &--size-big {
+    width: 2rem;
+    height: 2rem;
+
+    &::before,
+    &::after {
+      width: 2rem;
+    }
+  }
+}

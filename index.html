@@ -267,7 +267,7 @@
               и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="form" action="#">
-              <input class="form__mail" type="mail" name="mail" value="" placeholder="Электронная почта" required="">
+              <input class="form__input form__input--size-big" type="mail" name="mail" value="" placeholder="Электронная почта" required="">
               <button class="button-main button-main--other form__button" type="button" name="button">Отправить</button>
             </form>
           </div>     
@@ -275,7 +275,7 @@
       </div>
     </main>
 
-    <section class="section-feedback">
+    <section class="section-feedback" id="section-feedback">
       <h2 class="visually-hidden">Обратная связь и карта</h2>
       <img class="map" src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <div class="feedback">
@@ -339,22 +339,27 @@
 
     <div id="modal-feedback" class="modal-feedback">
       <div class="modal-feedback__content">
-        <form class="modal-form" action="">
-          <h2>Мы обязательно вам ответим!</h2>
-          <div class="modal-form__group">
-            <input class="modal-form__input" id="name" type="text" placeholder="Как вас зовут?" required>
-            <label class="modal-form__label" for="name">Как вас зовут?</label>
+        <div class="modal-feedback__button-box">
+          <a class="dialog-close-button dialog-close-button--size-big" href="#section-feedback">Закрыть</a>
+        </div>     
+        <form class="form" action="">
+          <div class="form__group">
+            <h2 class="form__heading">Мы обязательно вам ответим!</h2>
           </div>
-          <div class="modal-form__group">
-            <input class="modal-form__input" id="email" type="email" placeholder="Ваша почта для ответа?" required>
-            <label class="modal-form__label" for="email">Ваша почта для ответа?</label>
+          <div class="form__group">
+            <input class="form__input" id="name" type="text" placeholder="Как вас зовут?" required>
+            <label class="form__label" for="name">Как вас зовут?</label>
           </div>
-          <div class="modal-form__group">
-            <input class="modal-form__input" id="description" type="text" placeholder="Напишите что-нибудь..." required>
-            <label class="modal-form__label" for="description">Напишите что-нибудь...</label>
+          <div class="form__group">
+            <input class="form__input" id="email" type="email" placeholder="Ваша почта для ответа?" required>
+            <label class="form__label" for="email">Ваша почта для ответа?</label>
           </div>
-          <div class="modal-form__group">
-            <button class="button-main modal-form__button" type="submit">Отправить</button>
+          <div class="form__group">
+            <textarea class="form__input form__input--size-full" id="description" placeholder="Напишите что-нибудь..." required></textarea>
+            <label class="form__label" for="description">Напишите что-нибудь...</label>
+          </div>
+          <div class="form__group">
+            <button class="button-main button-main--other" type="submit">Отправить</button>
           </div>
         </form>
       </div>
