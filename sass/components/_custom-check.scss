@@ -1,0 +1,67 @@
+.custom-check {
+  cursor: pointer;
+  margin-right: 1.9rem;
+  display: flex;
+  align-self: center;
+
+  &:last-child {
+    margin-right: .6rem;
+  }
+
+  &__label {
+    position: relative;
+  }
+
+  // рамка
+  &__label::before {
+    content: "";
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: .3rem;
+    margin-right: 1.2rem;
+    vertical-align: -.5rem;
+    border: .2rem solid $color-light-grey-white;
+    padding: 0.4rem;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+  }
+
+  // галка
+  &__label::after {
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 1rem;
+    left: .4rem;
+    top: 1rem;
+    border-right: .4rem solid #000000;
+    border-top: .4rem solid #000000;
+    
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    
+    display: none;
+  }
+
+  &__input:checked + &__label::after {
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 1rem;
+    height: 2rem;
+    border-color: $color-light-grey-white;
+  }
+
+  &__input:hover + &__label::before {
+    border-color: #fff;
+  }
+
+  &__input:checked:hover + &__label::after {
+    border-color: #fff;
+  }
+
+  &__input[disabled] + &__label::before {
+    border-color: $color-dark-grey-white;
+  }
+}
