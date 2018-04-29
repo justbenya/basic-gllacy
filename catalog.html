@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Gllacy Shop | Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nouislider.css">
+</head>
+<body>
+  <header class="header container">
+    <img class="logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
+    <nav class="main-navigation font font--bold">
+      <ul class="main-navigation__items">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--active" href="#">Каталог</a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <p class="submenu__title">Новинки</p>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Щербеты</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="index.html">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <ul class="user-menu font font--medium">
+      <li class="user-menu__item">
+        <a class="user-menu__link button user-menu__button" href="#">
+          <span class="visually-hidden">Поиск</span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewbox="0 0 17 17">
+            <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
+                        13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019
+                         2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+          </svg>
+        </a>
+        <div class="user-menu__search">
+          <input class="user-menu__input" type="text" placeholder="Что ищем?">
+        </div>
+      </li>
+      <li class="user-menu__item">
+        <a class="user-menu__link button user-menu__button user-menu__button--width-medium" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewbox="0 0 21 19">
+            <g fill="#fff">
+              <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+              <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+            </g>
+          </svg>
+          <span class="user-menu__link-text">Вход</span>
+        </a>
+        <div class="form-login">
+          <form class="form-login__form">
+            <input class="form-login__input" type="text" placeholder="Электронная почта" required>
+            <input class="form-login__input" type="password" placeholder="Пароль" required>
+            <div class="form-login__group">
+              <div class="form-login__link-group">
+                <input class="button-main form-login__button" type="submit" value="Войти">
+              </div>
+              <div class="form-login__link-group">
+                <a class="form-login__link" href="">Забыли пароль?</a>
+                <a class="form-login__link" href="">Новая регистрация</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      <li class="user-menu__item">
+        <a class="user-menu__link button user-menu__button user-menu__button--width-high" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20">
+            <path fill="#a1b4a9" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z" />
+            <circle fill="#fff" cx="6.984" cy="18" r="2" />
+            <circle fill="#fff" cx="15.984" cy="18" r="2" />
+            <path fill="#fff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
+            />
+          </svg>
+          <span class="user-menu__link-text">Пусто</span>
+        </a>
+        <div class="form-buy">
+          <form class="form-buy__form" action="">
+            <table class="form-buy__table">
+              <caption class="form-buy__caption">Итого: 750 руб.</caption>
+              <tr>
+                <td>
+                  <button class="form-buy__btn-del" type="button" title="Удалить">Удалить</button>
+                </td>
+                <td>
+                  <img class="form-buy__photo" src="img/icecream1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х
+                  <span class="form-buy__price">200 руб.</span>
+                </td>
+                <td>
+                  300 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button class="form-buy__btn-del" type="button" title="Удалить">Удалить</button>
+                </td>
+                <td>
+                  <img class="form-buy__photo" src="img/icecream3.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                </td>
+                <td>Сливочно-клубничное с присыпкой из белого шоколада</td>
+                <td>1,5 кг х
+                  <span class="form-buy__price">300 руб.</span>
+                </td>
+                <td>
+                  450 руб.
+                </td>
+              </tr>
+            </table>
+            <input class="button-main form-buy__button" type="submit" value="Оформить заказ">
+          </form>
+        </div>
+      </li>
+    </ul>
+    <div class="work-time font font--medium">
+      <p class="work-time__text">С 10 до 20, ежедневно</p>
+      <p class="work-time__text work-time__text--big">8 812 450-25-25</p>
+    </div>
+  </header>
+  <main class="container">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="index.html" class="link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="#" class="link">Каталог</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="link link--active">Сливочное</a>
+      </li>
+    </ul>
+    <section class="section-catalog">
+      <h1 class="main-heading u-margin-bottom-medium">Сливочное мороженое</h1>
+      <form class="filters" action="">
+        <div class="filters__group">
+          <label class="filters__label" for="select">Сортировка:</label>
+          <div id="select" class="custom-select">
+            <select>
+              <option>по популярности</option>
+              <option>по цене</option>
+              <option>по жирности</option>
+            </select>
+          </div>
+        </div>
+        <div class="filters__group">
+          <div id="slider"></div>
+         
+        </div>
+        <div class="form-group">
+          <input type="radio" name="percent" id="percent1">
+          <label for="percent1">0%</label>
+          <input type="radio" name="percent" id="percent2">
+          <label for="percent2">до 10%</label>
+          <input type="radio" name="percent" id="percent3">
+          <label for="percent3">до 30%</label>
+          <input type="radio" name="percent" id="percent4">
+          <label for="percent4">выше 30%</label>
+        </div>
+        <div class="form-group">
+          <label>Наполнители:</label>
+        </div>
+      </form>
+    </section>
+  </main>
+
+    
+      
+      
+
+  <script src="js/nouislider.js"></script>
+  <script>
+    var slider = document.getElementById('slider');
+    noUiSlider.create(slider, {
+      start: [0, 500],
+      connect: true,
+      range: {
+        'min': 0,
+        'max': 1000
+      }
+    });
+  </script>
+</body>
+</html>
