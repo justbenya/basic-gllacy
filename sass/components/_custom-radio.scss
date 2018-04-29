@@ -1,0 +1,48 @@
+.custom-radio {
+  cursor: pointer;
+  margin-right: 1.9rem;
+  display: flex;
+  align-self: center;
+
+  &:last-child {
+    margin-right: .6rem;
+  }
+
+  &__label::before {
+    content: "";
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: .3rem solid $color-light-grey-white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin-right: 0.8rem;
+    vertical-align: -.5rem;
+    background-color: transparent;
+    background-clip: content-box;
+
+    transition: all 0.2s ease;
+  }
+
+  // Обычное состояние
+  &__input:checked + &__label::before {
+    background-color: $color-light-grey-white;
+    border-color: $color-light-grey-white;
+  }
+ 
+  // Наведение выбранное
+  &__input:checked:hover + &__label::before {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  // Наведение обычное
+  &__input:hover + &__label::before {
+    border-color: #fff;
+  }
+
+  // Disabled
+  &__input[disabled] + &__label::before {
+    border-color: $color-dark-grey-white;
+  }
+}
