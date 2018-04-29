@@ -1,0 +1,22 @@
+.link {
+  color: inherit;
+  &:visited,
+  &:link {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+
+  &:active,
+  &:hover {
+    color: #ffbc9e;
+    border-bottom: 1px solid rgba(255,188,158,.4);
+  }
+
+  &--active {
+    &:active,
+    &:hover {
+      color: #fff;
+      border-bottom: none;
+    }
+  }
+}

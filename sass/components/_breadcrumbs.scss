@@ -1,0 +1,14 @@
+.breadcrumbs {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  display: flex;
+  list-style: none;
+  color: #fff;
+
+  &__item {
+    &:not(:last-child)::after {
+      content: "»";
+      padding: 0 .5rem;
+    }
+  }
+}
