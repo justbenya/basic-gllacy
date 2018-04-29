@@ -5,9 +5,11 @@
   font-family: $font-roboto-medium;
   color: #fff;
   display: flex;
+  flex-wrap: wrap;
 
   &__group {
     margin-right: 1.4rem;
+    margin-bottom: 1.7rem;
   }
 
   &__label {
@@ -16,5 +18,36 @@
     line-height: 1.6rem;
     margin-left: 1.5rem;
     margin-bottom: .5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    background-color: #aabab0;
+    border-radius: 2rem;
+    padding: 1rem 1.3rem;
+    height: 3.5rem;
+  }
+
+  &__button {
+    align-self: center;
+    height: 3.5rem;
+    font: inherit;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: #aabab0;
+    padding: .4rem 2.8rem;
+    margin-top: .3rem;
+
+    &:hover {
+      background-color: #fbfcfb;
+      color: #000;
+    }
+
+    &:active {
+      border: none;
+      box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, .7);
+      background-color: #eaeaea;
+    }
   }
 }
