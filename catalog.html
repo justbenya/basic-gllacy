@@ -5,7 +5,6 @@
   <title>Gllacy Shop | Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/nouislider.css">
 </head>
 <body>
   <header class="header container">
@@ -163,41 +162,61 @@
           </div>
         </div>
         <div class="filters__group">
-          <div id="slider"></div>
-         
+          <!-- Сделать  -->
+          <label class="filters__label" for="slider">Цена: 100 руб. - 500 руб.</label>
+          <div class="filters__wrapper">
+            <div style="width: 200px;" ></div>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="radio" name="percent" id="percent1">
-          <label for="percent1">0%</label>
-          <input type="radio" name="percent" id="percent2">
-          <label for="percent2">до 10%</label>
-          <input type="radio" name="percent" id="percent3">
-          <label for="percent3">до 30%</label>
-          <input type="radio" name="percent" id="percent4">
-          <label for="percent4">выше 30%</label>
+        <div class="filters__group">
+          <label class="filters__label">Жирность:</label>
+          <div class="filters__wrapper">
+            <div class="custom-radio">
+              <input class="visually-hidden custom-radio__input" type="radio" name="radiogroup1" id="rd1">
+              <label class="custom-radio__label" for="rd1">0%</label>
+            </div>
+            <div class="custom-radio">
+              <input class="visually-hidden custom-radio__input" type="radio" name="radiogroup1" id="rd2" checked>
+              <label class="custom-radio__label" for="rd2">до 10%</label>
+            </div>
+            <div class="custom-radio">
+              <input class="visually-hidden custom-radio__input" type="radio" name="radiogroup1" id="rd3">
+              <label class="custom-radio__label" for="rd3">до 30%</label>
+            </div>
+            <div class="custom-radio">
+              <input class="visually-hidden custom-radio__input" type="radio" name="radiogroup1" id="rd4">
+              <label class="custom-radio__label" for="rd4">выше 30%</label>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label>Наполнители:</label>
+        <div class="filters__group">
+          <label class="filters__label">Наполнители:</label>
+          <div class="filters__wrapper">
+            <div class="custom-check">
+              <input class="visually-hidden custom-check__input" type="checkbox" id="cb1" checked>
+              <label class="custom-check__label" for="cb1">шоколадные</label>
+            </div>
+            <div class="custom-check">
+              <input class="visually-hidden custom-check__input" type="checkbox" id="cb2" checked>
+              <label class="custom-check__label" for="cb2">сахарные присыпки</label>
+            </div>
+            <div class="custom-check">
+              <input class="visually-hidden custom-check__input" type="checkbox" id="cb3">
+              <label class="custom-check__label" for="cb3">фрукты</label>
+            </div>
+            <div class="custom-check">
+              <input class="visually-hidden custom-check__input" type="checkbox" id="cb4">
+              <label class="custom-check__label" for="cb4">сиропы</label>
+            </div>
+            <div class="custom-check">
+              <input class="visually-hidden custom-check__input" type="checkbox" id="cb5">
+              <label class="custom-check__label" for="cb5">джемы</label>
+            </div>
+          </div>
         </div>
+        <button class="filters__button" type="submit">Применить</button>
       </form>
     </section>
   </main>
-
-    
-      
-      
-
-  <script src="js/nouislider.js"></script>
-  <script>
-    var slider = document.getElementById('slider');
-    noUiSlider.create(slider, {
-      start: [0, 500],
-      connect: true,
-      range: {
-        'min': 0,
-        'max': 1000
-      }
-    });
-  </script>
 </body>
 </html>
