@@ -1,10 +1,10 @@
 @import "abstracts/variables";
-
-@import "base/typography";
 @import "base/base";
+@import "base/typography";
 @import "base/utilities";
 
 @import "pages/home";
+@import "pages/catalog";
 
 @import "layout/header";
 @import "layout/main-footer";
@@ -32,3 +32,8 @@
 @import "components/form-buy";
 @import "components/modal-feedback";
 @import "components/dialog-close-button";
+
+@import "components/breadcrumbs";
+@import "components/link";
+@import "components/filters";
+@import "components/custom-select"
