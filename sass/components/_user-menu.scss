@@ -1,17 +1,22 @@
 .user-menu {
   display: flex;
   list-style: none;
+  position: relative;
 
   &__item {
     margin-left: 1rem;
-  }
 
-  &__item:hover &__search {
-    display: flex;
-  }
+    &:hover .user-menu__search {
+      display: flex;
+    }
 
-  &__item:hover .form-login {
-    display: block;
+    &:hover .form-login {
+      display: block;
+    }
+
+    &--buy:hover .form-buy {
+      display: block;
+    }
   }
 
   &__link {
@@ -66,7 +71,8 @@
     width: 34rem;
     height: 7.5rem;    
     margin-top: .3rem;
-    right: 28.5rem;
+    right: 22rem;
+    z-index: 100;
 
     background-color: $color-light-white-2;
     border-radius: 5px;

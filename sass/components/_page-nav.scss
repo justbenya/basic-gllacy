@@ -1,0 +1,44 @@
+.page-nav {
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: right;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 .2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: .2rem .9rem .4rem;
+    text-decoration: none;
+    line-height: 18px;
+
+    &:hover {
+      background-color: #9db1a5;
+    }
+
+    &--active {
+      background-color: #fff;
+      color: #000;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__arrow {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
+
+    &--close {
+      opacity: .5;
+    }
+  }
+}

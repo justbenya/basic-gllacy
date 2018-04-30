@@ -39,21 +39,11 @@
     display: block;
   }
 
-  &__link:visited,
-  &__link:link {
+  &__link {
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-family: $font-roboto-medium;
-    text-decoration: none;
-    color: #fff;
-    display: inline;
-    border-bottom: 1px solid rgba(255,255,255, 0.2);
   }
-
-  &__link:hover {
-    color: $color-link-red;
-    border-bottom: $line-link-red;
-   }
 
   &__img {
     width: 26.7rem;
@@ -72,7 +62,7 @@
 
   &__price {
     position: absolute;
-    bottom: 6.5rem;
+    top: 21rem;
     left: 0;
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);

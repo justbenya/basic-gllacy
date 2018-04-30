@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    color: #fff;
   }
 
   &__item {
@@ -17,7 +18,7 @@
   &__link {
     font-size: 13px;
     line-height: 18px;
-    color: #ffffff;
+    color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     text-decoration: none;
   }
