@@ -7,16 +7,18 @@
   &__item {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 .2rem;
+    margin: 0 .2rem;
   }
 
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;  
+    height: 2.4rem;
     text-decoration: none;
     color: #fff;
-    border-radius: 15px;
-    padding: .2rem .9rem .4rem;
-    text-decoration: none;
-    line-height: 18px;
+    border-radius: 100%;
 
     &:hover {
       background-color: #9db1a5;
