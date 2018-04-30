@@ -1,4 +1,4 @@
-https://justbenya.github.io/gllacy
+https://justbenya.github.io/basic-gllacy/
 
 Тестовый проект
 ====
