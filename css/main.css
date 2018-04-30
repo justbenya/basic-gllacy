@@ -103,10 +103,17 @@ input[type="radio"].visually-hidden {
   margin: 0 auto; }
 
 .page-picture {
-  background-color: #849d8f;
-  background-image: url("../img/bg1.png");
   background-position: top center;
   background-repeat: no-repeat; }
+  .page-picture--bg1 {
+    background-color: #849d8f;
+    background-image: url("../img/bg1.png"); }
+  .page-picture--bg2 {
+    background-color: #8996a6;
+    background-image: url("../img/bg2.png"); }
+  .page-picture--bg3 {
+    background-color: #9d8b84;
+    background-image: url("../img/bg3.png"); }
 
 .section-slider {
   margin-bottom: 5.5rem; }
@@ -615,7 +622,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/map.png");
   -webkit-background-size: cover;
   background-size: cover;
-  height: 43rem; }
+  height: 43rem;
+  position: relative; }
+  .map__pin {
+    position: absolute;
+    background-image: url("../img/pin.svg");
+    width: 8rem;
+    height: 14rem;
+    background-repeat: no-repeat;
+    top: 10rem;
+    right: 90rem; }
 
 .radiobox {
   display: inline-block;
@@ -714,7 +730,10 @@ input[type="radio"].visually-hidden {
     padding-top: .8rem;
     padding-bottom: .6rem;
     padding-left: .8rem;
-    padding-right: .8rem; }
+    padding-right: .8rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 2rem;
+    border-radius: 2rem; }
   .user-menu__button:hover path,
   .user-menu__button:focus path {
     fill: #000; }
@@ -726,7 +745,8 @@ input[type="radio"].visually-hidden {
     padding-right: 3.6rem; }
   .user-menu__button--width-high:hover path:first-child,
   .user-menu__button--width-high:focus path:first-child {
-    fill: #d07058; }
+    fill: #d07058;
+    fill-opacity: 1; }
   .user-menu__button--width-high:hover circle,
   .user-menu__button--width-high:focus circle {
     fill: #000; }

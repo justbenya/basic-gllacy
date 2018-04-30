@@ -2,4 +2,15 @@
   background-image: url('../img/map.png');
   background-size: cover;
   height: 43rem;
+  position: relative;
+
+  &__pin {
+    position: absolute;
+    background-image: url('../img/pin.svg');
+    width: 8rem;
+    height: 14rem;
+    background-repeat: no-repeat;
+    top: 10rem;
+    right: 90rem;
+  }
 }
