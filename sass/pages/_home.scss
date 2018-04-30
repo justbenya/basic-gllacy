@@ -5,10 +5,23 @@
 }
 
 .page-picture {
-  background-color: $color-bg-1;
-  background-image: url("../img/bg1.png");
   background-position: top center;
   background-repeat: no-repeat;
+
+  &--bg1 {
+    background-color: $color-bg-1;
+    background-image: url("../img/bg1.png");
+  }
+
+  &--bg2 {
+    background-color: $color-bg-2;
+    background-image: url("../img/bg2.png");
+  }
+ 
+  &--bg3 {
+    background-color: $color-bg-3;
+    background-image: url("../img/bg3.png");
+  }
 }
 
 .section-slider {

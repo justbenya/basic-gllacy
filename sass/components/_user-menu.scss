@@ -36,6 +36,8 @@
     padding-bottom: .6rem;
     padding-left: .8rem;
     padding-right: .8rem;
+    background-color: rgba($color: #fff, $alpha: .2);
+    border-radius: 2rem;
   }
 
   &__button:hover path,
@@ -56,6 +58,7 @@
   &__button--width-high:hover path:first-child,
   &__button--width-high:focus path:first-child {
     fill: $color-light-red;
+    fill-opacity: 1;
   }
 
   &__button--width-high:hover circle,

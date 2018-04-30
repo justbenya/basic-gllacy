@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-picture font">
+  <body class="page-picture page-picture--bg1 font">
     <header class="header container">
       <img class="logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       <nav class="main-navigation font font--bold">
@@ -42,7 +42,7 @@
       
       <ul class="user-menu font font--medium">
         <li class="user-menu__item">
-          <a class="user-menu__link button user-menu__button" href="#">
+          <a class="user-menu__link user-menu__button" href="#">
             <span class="visually-hidden">Поиск</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewbox="0 0 17 17">
               <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5
@@ -83,7 +83,7 @@
         <li class="user-menu__item">
           <a class="user-menu__link button user-menu__button user-menu__button--width-high" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20">
-              <path fill="#a1b4a9" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z" />
+              <path fill="#fff" fill-opacity="0.1" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z" />
               <circle fill="#fff" cx="6.984" cy="18" r="2" />
               <circle fill="#fff" cx="15.984" cy="18" r="2" />
               <path fill="#fff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
@@ -278,7 +278,9 @@
     
     <section class="section-feedback" id="section-feedback">
       <h2 class="visually-hidden">Обратная связь и карта</h2>
-      <div class="map"></div>
+      <div class="map">
+        <span class="map__pin"></span>
+      </div>
       <div class="feedback">
         <p class="feedback__text">
           Адрес главного офиса
@@ -368,5 +370,31 @@
         </form>
       </div>
     </div>
+    <script>
+      const btns = document.querySelectorAll('.radiobox');
+      const bg = document.querySelector('.page-picture');
+
+      btns.forEach((element, index) => {
+        element.addEventListener('click', (e) => {
+          if (!e.target.classList.contains('radiobox--selected')) {
+            // Убираем все выделения
+            btns.forEach(button => {
+              button.classList.remove('radiobox--selected');
+            });
+
+            // Выделяем нужную кнопку
+            e.target.classList.add('radiobox--selected');
+
+            // Удаляем все классы
+            bg.classList.remove('page-picture--bg1');
+            bg.classList.remove('page-picture--bg2');
+            bg.classList.remove('page-picture--bg3');
+
+            // Добавляем задник
+            bg.classList.add(`page-picture--bg${index + 1}`);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
