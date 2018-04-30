@@ -8,6 +8,7 @@ https://justbenya.github.io/gllacy
 - gulp 
 - sass(scss)
 - JavaScript
+- svg-images
 
 ##Дополнительно:
 - При достижении 1200px сетка перестаёт масштабироваться дальше.
@@ -17,4 +18,3 @@ https://justbenya.github.io/gllacy
 - Изменить блок button.
 - Исправить поведение блока с картой. 
 - Вставить яндекс карту.
-- Добавить слайдер.
