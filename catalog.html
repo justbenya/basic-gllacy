@@ -8,7 +8,10 @@
 </head>
 <body>
   <header class="header container">
-    <img class="logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
+    </a>
+    
     <nav class="main-navigation font font--bold">
       <ul class="main-navigation__items">
         <li class="main-navigation__item">
@@ -21,18 +24,18 @@
               <a class="submenu__link" href="catalog.html">Сливочное</a>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="#">Щербеты</a>
+              <a class="submenu__link" href="catalog.html">Щербеты</a>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="#">Фруктовый лед</a>
+              <a class="submenu__link" href="catalog.html">Фруктовый лед</a>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="#">Мелорин</a>
+              <a class="submenu__link" href="catalog.html">Мелорин</a>
             </li>
           </ul>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#">Доставка и оплата</a>
+          <a class="main-navigation__link" href="catalog.html">Доставка и оплата</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="index.html">О Компании</a>
@@ -80,7 +83,7 @@
           </form>
         </div>
       </li>
-      <li class="user-menu__item">
+      <li class="user-menu__item user-menu__item--buy">
         <a class="user-menu__link button user-menu__button user-menu__button--width-high" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20">
             <path fill="#a1b4a9" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z" />
@@ -89,7 +92,7 @@
             <path fill="#fff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"
             />
           </svg>
-          <span class="user-menu__link-text">Пусто</span>
+          <span class="user-menu__link-text">2 товара</span>
         </a>
         <div class="form-buy">
           <form class="form-buy__form" action="">
@@ -162,10 +165,13 @@
           </div>
         </div>
         <div class="filters__group">
-          <!-- Сделать  -->
           <label class="filters__label" for="slider">Цена: 100 руб. - 500 руб.</label>
           <div class="filters__wrapper">
-            <div style="width: 200px;" ></div>
+            <div class="custom-range">
+              <input type="range" name="custom-range__min" id="custom-rangeMin" class="custom-range__min" value="100" min="0" max="1000" />
+              <input type="range" name="custom-range__max" id="custom-rangeMax" class="custom-range__max" value="300" min="0" max="1000"
+                data-track-theme="b" />
+            </div>
           </div>
         </div>
         <div class="filters__group">
@@ -217,6 +223,215 @@
         <button class="filters__button" type="submit">Применить</button>
       </form>
     </section>
+
+    <section class="section-catalog-icecream">
+      <h2 class="visually-hidden">Цены на мороженое</h2>
+      <ul class="icecream">
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом и цитрусовой стружкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">310 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream2.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">380 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream3.png" width="267" height="267" alt="Мороженое с присыпкой из белого шоколада">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">355 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream4.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">415 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream5.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">325 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное с брусничным <br>джемом</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream7.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">410 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream9.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">375 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream11.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">320 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное с шоколадной стружкой</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream6.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">440 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream8.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">435 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочноe с ментоловым сиропом</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream10.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">355 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное с кусочками черного шоколада</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+        <li class="icecream__item u-margin-bottom-medium">
+          <div class="icecream__box">
+            <img class="icecream__img" src="img/icecream12.png" width="267" height="267" alt="Мороженое крем-брюле с карамельной подливкой">
+            <div class="font font--bold icecream__price">
+              <span class="icecream__font">420 ₽</span>
+              <span class="icecream__font icecream__font--small">/кг</span>
+            </div>
+            <a class="icecream__link link" href="#">Сливочное с мятным сиропом</a>
+            <a class="button-main icecream__button" href="#">Быстрый просмотр</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <ul class="page-nav">
+      <li class="page-nav__item">
+        <a class="page-nav__arrow page-nav__arrow--close">&#8249;</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__link page-nav__link--active" href="">1</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__link" href="">2</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__link" href="">3</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__link" href="">4</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__link" href="">5</a>
+      </li>
+      <li class="page-nav__item">
+        <a class="page-nav__arrow" href="">&#8250;</a>
+      </li>
+    </ul>
   </main>
+
+  <footer class="main-footer container">
+    <ul class="social-networks">
+      <li>
+        <a class="social-networks__link social-networks__link--twitter" href="https://twitter.com/">
+          <span class="visually-hidden">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-networks__link social-networks__link--insta" href="https://instagram.com/">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-networks__link social-networks__link--fb" href="https://facebook.com/">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-networks__link social-networks__link--vk" href="https://vk.com/">
+          <span class="visually-hidden">Vkontakte</span>
+        </a>
+      </li>
+    </ul>
+  
+    <nav class="footer-menu">
+      <ul class="footer-menu__items">
+        <li class="footer-menu__item">
+          <a class="font font--bold footer-menu__link footer-menu__link--favorite link" href="#">Для поставщиков</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link link" href="#">Наши документы</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link link" href="#">О производстве</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link link" href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <p class="copyright">
+      <img src="img/logo-htmlacademy.svg" width="111" height="38" alt="HTML Academy">
+      <br> Сделано в
+      <a class="copyright__link link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018
+    </p>
+  </footer>
 </body>
 </html>
