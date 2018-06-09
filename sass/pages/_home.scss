@@ -5,11 +5,11 @@
 }
 
 .page-picture {
-  background-position: 50% 0;
+  background-position: center 0;
   background-repeat: no-repeat;
 
-  @media (max-width: 89rem) {
-    background-position: 7.3rem 0;
+  @media (max-width: 1199px) {
+    background-position: 8rem 0;
   }
 
   &--bg1 {

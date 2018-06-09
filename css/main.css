@@ -106,11 +106,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto; }
 
 .page-picture {
-  background-position: 50% 0;
+  background-position: center 0;
   background-repeat: no-repeat; }
-  @media (max-width: 89rem) {
+  @media (max-width: 1199px) {
     .page-picture {
-      background-position: 7.3rem 0; } }
+      background-position: 8rem 0; } }
   .page-picture--bg1 {
     background-color: #849d8f;
     background-image: url("../img/bg1.png"); }
