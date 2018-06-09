@@ -24,14 +24,17 @@ img {
 
 @font-face {
   font-family: "Roboto";
+  font-display: swap;
   src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto Bold";
+  font-display: swap;
   src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto Medium";
+  font-display: swap;
   src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff"); }
 
 .font {
@@ -103,8 +106,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto; }
 
 .page-picture {
-  background-position: top center;
+  background-position: 50% 0;
   background-repeat: no-repeat; }
+  @media (max-width: 89rem) {
+    .page-picture {
+      background-position: 7.3rem 0; } }
   .page-picture--bg1 {
     background-color: #849d8f;
     background-image: url("../img/bg1.png"); }
@@ -137,7 +143,8 @@ input[type="radio"].visually-hidden {
 
 .section-feedback {
   position: relative;
-  width: 100%;
+  width: 120rem;
+  margin: 0 auto;
   margin-bottom: 2rem; }
 
 .breadcrumbs {
